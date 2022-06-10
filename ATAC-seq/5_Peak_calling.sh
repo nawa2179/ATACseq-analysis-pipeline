@@ -15,7 +15,12 @@ date
 for i in GFP1_S3 GFP2_S4 GFP3_S5 KO2_S1 KO3_S2
 do
 
-macs2 callpeak -t $dir_bam_sorted$i$ext_sorted_bam_file -f BAMPE -n $i -g 1.87e9 -p 0.01 --outdir $dir_out
+macs2 callpeak -t $dir_bam_sorted$i$ext_sorted_bam_file \
+ 			   -f BAMPE \
+ 			   -n $i \
+ 			   -g 1.87e9 \
+ 			   -p 0.01 \
+ 			   --outdir $dir_out
 
 #-f format ->  bam pairend
 #-n sample's name
