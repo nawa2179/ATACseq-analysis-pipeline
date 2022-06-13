@@ -1,0 +1,6 @@
+Sample	File	Condition
+GFP1	GFP1.txt	GFP 
+GFP2	GFP2.txt	GFP
+GFP3	GFP3.txt	GFP
+KO2	KO2.txt	KO
+KO3	KO3.txt	KO
