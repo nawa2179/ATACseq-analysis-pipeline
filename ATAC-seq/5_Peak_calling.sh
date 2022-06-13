@@ -20,9 +20,9 @@ macs2 callpeak -t $dir_bam_sorted$i$ext_sorted_bam_file \
  			   -n $i \
  			   -g 1.87e9 \
  			   -q 0.01 \
-       --nomodel \
-       --shift 100 \
-       --extsize 200 \
+			   --nomodel \
+      			   --shift 100 \
+                           --extsize 200 \
  			   --outdir $dir_out
 
 #-f format ->  bam pairend
