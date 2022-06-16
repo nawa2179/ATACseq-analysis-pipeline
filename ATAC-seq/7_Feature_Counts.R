@@ -9,7 +9,7 @@ BiocManager::install("Rsubread")
 library(Rsubread)
 
 # the annotation file used on "annot.ext" can be obtained by using the following command on bash : 
-# awk 'OFS="\t" {print $1"."$2"."$3, $1, $2, $3, "."}'  "peaks.bed" > "annotation_file.saf"
+# awk 'OFS="\t" {print $1"."$2"."$3, $1, $2, $3, "."}' peaks.bed > peaks.saf
 
 count_ATAC= featureCounts(c("GFP1_S3.sorted.bam","GFP2_S4.sorted.bam","GFP3_S5.sorted.bam", "KO2_S1.sorted.bam",
 "KO3_S2.sorted.bam"), annot.inbuilt = "mm10", isPairedEnd = T, annot.ext = "merge_peaks.saf")
