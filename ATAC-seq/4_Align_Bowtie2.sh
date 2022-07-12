@@ -32,6 +32,7 @@ R2="_R2_001_val_2.fq.gz"
 
 date
 
+
 for i in GFP1_S3 GFP2_S4 GFP3_S5 KO2_S1 KO3_S2
 
 do
@@ -42,7 +43,7 @@ bowtie2 -x $index_mm10 \
 		-2 $dir_data_trimmed$i$R2 \
 		-S $dir_Sam_file$i$ext_sam_file
 
-# -x : directory of index
+# -x : Dossier contenant l'index du génome
 # -p: number of mismatches allowed
 # if wa have single-end data (-1), if paired-end -1 & -2 
 # -S: directory for Sam files
@@ -53,12 +54,12 @@ samtools view -bh $dir_Sam_file$i$ext_sam_file \
 
 #-b: Output in the BAM format
 #-h: Include the header in the output
-#-o: output directory 
+#-o: output directory
 
 # Sort the bam files
 samtools sort $dir_Bam_file$i$ext_bam_file \
-			  -o $dir_sorted_bam_file$i$ext_sorted_bam_file 
-				 
+			  -o $dir_sorted_bam_file$i$ext_sorted_bam_file
+
 done
 
 date
