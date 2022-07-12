@@ -5,8 +5,6 @@
 #Load binaries
 module load bioinfo/bedtools-2.26.0
 
-dir_bed_file=(/home/nhakim/work/5_MACS2/)
-
 ext_bed="_peaks.narrowPeak"
 
 dir_out=(/home/nhakim/work/5_MACS2_bis/)
