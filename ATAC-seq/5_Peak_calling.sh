@@ -6,7 +6,7 @@ module load bioinfo/macs-v2.2.7.1
 
 dir_bam_sorted=(/work/nhakim/4_Bowtie2_align/sorted_bam_file/)
 
-dir_out=(/home/nhakim/work/peaks-calling-pval0.01/)
+dir_out=(/home/nhakim/work/5_MACS2_bis/)
 
 ext_sorted_bam_file=".sorted.bam"
 
